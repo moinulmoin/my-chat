@@ -5,18 +5,18 @@ import { and, asc, desc, eq, gt, gte } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 
+import { BlockKind } from '@/components/block';
 import {
-  user,
   chat,
-  type User,
   document,
-  type Suggestion,
-  suggestion,
   type Message,
   message,
+  type Suggestion,
+  suggestion,
+  user,
+  type User,
   vote,
 } from './schema';
-import { BlockKind } from '@/components/block';
 
 // Optionally, if not using email/pass login, you can
 // use the Drizzle adapter for Auth.js / NextAuth
